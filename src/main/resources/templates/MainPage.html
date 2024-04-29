@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="title" content="">
     <meta name="descript" content="">
     <meta name="keywards" content="">
     <title>MainPage</title>
+    <style>
+        .autonewline-input {
+            width: 430px;
+            height: auto;
+            word-wrap: break-word;
+            white-space: pre-wrap;
+        }
+    </style>
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="shortcut icon" href="../static/img/NataSchoolTransponent.png" type="image/x-icon">
 </head>
@@ -94,7 +102,39 @@
 </main>
 
 <footer>
-    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <p>**Контакты**</p>
+                <ul>
+                    <li>Телефон: +7 (495) 123-45-67</li>
+                    <li>Email: info@example.com</li>
+                    <li>Адрес: г. Москва, ул. Пушкина, д. 12</li>
+                </ul>
+                <div class="social-networks">
+                    <a href="#" class="vk"><i class="fab fa-vk"></i> ВКонтакте</a>
+                    <a href="#" class="telegram"><i class="fab fa-telegram-plane"></i> Телеграм</a>
+                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i> +7 (987) 654-32-10</a>
+                    <a href="#" class="youtube"><i class="fab fa-youtube"></i> YouTube</a>
+                </div>
+            </div>
+            <div class="feedback">
+                <p>**Обратная связь**</p>
+                <form action="#">
+                    <input type="text" placeholder="Имя" name="name" required>
+                    <input type="text" placeholder="Фамилия" name="surname" required>
+                    <input type="tel" placeholder="Телефон" name="phone" required>
+                    <input type="email" placeholder="Email" name="email" required>
+                    <input type="text" placeholder="Комментарий" name="message" maxlength="4000" style="word-wrap: break-word;" class="autonewline-input"></input>
+                    <label for="consent">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных.
+                    </label>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </footer>
 </footer>
 
 </body>
