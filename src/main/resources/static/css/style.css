@@ -94,5 +94,76 @@ menu li a:hover {
 /* Показать выпадающее меню при наведении курсора */
 .dropdown:hover .dropdown-content {display: block;}
 
+body {
+    font-family: Arial, sans-serif;
+}
 
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
 
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info,
+.feedback {
+    width: 45%;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.social-networks {
+    margin-top: 20px;
+}
+
+.social-networks a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-networks i {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.feedback form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback input,
+.feedback textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.feedback button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.feedback label {
+    margin-bottom: 10px;
+}
+
+.feedback input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 5px;
+}
